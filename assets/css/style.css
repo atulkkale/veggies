@@ -308,3 +308,43 @@ header figure img{
 /*=================================
   Header styling ends here
 =================================*/
+
+/*=================================
+  Main styling ends here
+=================================*/
+
+/* Soup section start */
+.soup{
+  background-color: #f6be3b;
+}
+
+.soup .wrapper{
+  padding: 20vh 0;
+}
+
+.soup ul{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.soup-window h2{
+  color: #3c3c3c;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.soup-window p{
+  color: #3c3c3c;
+  line-height: 1.3;
+}
+
+.soup-window p::first-letter{
+  text-transform: uppercase;
+}
+
+/*=================================
+  Main styling ends here
+=================================*/
