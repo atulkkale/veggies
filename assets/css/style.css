@@ -187,11 +187,12 @@ sub {
   list-style: none;
 }
 
-.wrapper a, .wrapper span{
+.wrapper a,
+.wrapper span {
   display: inline-block;
 }
 
-body{
+body {
   font-family: Helvetica, sans-serif;
 }
 
@@ -207,12 +208,16 @@ body{
 =================================*/
 
 header {
-  background-image: linear-gradient(rgba(216, 204, 204, 0.2),rgba(0,0,0,0.3)), url('../images/headerbackround.jpg');
+  background-image: linear-gradient(
+      rgba(216, 204, 204, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/headerbackround.jpg');
   background-size: cover;
   background-position: left;
 }
 
-header .wrapper{
+header .wrapper {
   position: relative;
   height: 100vh;
 }
@@ -228,11 +233,11 @@ header ul {
   padding-top: 20px;
 }
 
-header ul li{
+header ul li {
   margin-left: 20px;
 }
 
-header ul a{
+header ul a {
   color: #767676;
   font-size: 18px;
   text-decoration: none;
@@ -241,14 +246,14 @@ header ul a{
   border: 1px solid transparent;
 }
 
-header ul a:hover{
+header ul a:hover {
   border: 1px solid #767676;
-  transition: .5s;
+  transition: 0.5s;
   color: black;
 }
 
-header h1{
-  color:#3c3c3c;
+header h1 {
+  color: #3c3c3c;
   font-size: 36px;
   text-align: center;
   width: 35%;
@@ -257,22 +262,22 @@ header h1{
   right: 0;
 }
 
-header h1::first-letter{
+header h1::first-letter {
   text-transform: uppercase;
 }
 
-header figure img{
+header figure img {
   width: 35%;
   position: absolute;
   top: 56%;
   right: 0;
 }
 
-.down{
+.down {
   position: absolute;
   left: 50%;
   bottom: 30px;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -283,24 +288,24 @@ header figure img{
   cursor: pointer;
 }
 
-.down span{
+.down span {
   text-indent: -200em;
 }
 
-.down span::before{
-  content: "\f078";
-  float:  right;
+.down span::before {
+  content: '\f078';
+  float: right;
   font-weight: 600;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   text-indent: 0;
 }
 
-.down span:nth-child(1){
+.down span:nth-child(1) {
   position: relative;
   top: 10px;
 }
 
-.down span:nth-child(3){
+.down span:nth-child(3) {
   position: relative;
   top: -10px;
 }
@@ -314,21 +319,21 @@ header figure img{
 =================================*/
 
 /* Soup section start */
-.soup{
+.soup {
   background-color: #f6be3b;
 }
 
-.soup .wrapper{
+.soup .wrapper {
   padding: 20vh 0;
 }
 
-.soup ul{
+.soup ul {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-.soup-window h2{
+.soup-window h2 {
   color: #3c3c3c;
   font-size: 19px;
   font-weight: 600;
@@ -336,17 +341,17 @@ header figure img{
   margin: 20px 0;
 }
 
-.soup-window p{
+.soup-window p {
   color: #3c3c3c;
   line-height: 1.3;
 }
 
-.soup-window p::first-letter{
+.soup-window p::first-letter {
   text-transform: uppercase;
 }
 
 /* Specials section starts */
-.specials h2{
+.specials h2 {
   color: #767676;
   font-size: 45px;
   font-weight: 600;
@@ -354,47 +359,51 @@ header figure img{
   margin-top: 80px;
 }
 
-.specials h2::first-letter{
+.specials h2::first-letter {
   text-transform: uppercase;
 }
 
-.specials figure{
+.specials figure {
   text-align: center;
 }
 
-.specials figure img{
+.specials figure img {
   width: 25%;
 }
 
-.special-images{
+.special-images {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 0px;
   margin: 50px 0 150px 0;
 }
 
-.special-images a img{
+.special-images a img {
   width: 100%;
   height: 100%;
 }
 
 /* About us section starts */
-.about-us{
-  background-image: linear-gradient(rgba(216, 204, 204, 0.5),rgba(0,0,0,0.3)), url('../images/aboutus.jpeg');
+.about-us {
+  background-image: linear-gradient(
+      rgba(216, 204, 204, 0.5),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/aboutus.jpeg');
   background-size: cover;
 }
 
-.about-us .wrapper{
+.about-us .wrapper {
   height: 110vh;
   text-align: center;
 }
 
-.about-us h2{
+.about-us h2 {
   width: 44%;
   text-align: center;
 }
 
-.about-us h2 a{
+.about-us h2 a {
   margin-top: 20%;
   color: #3c3c3c;
   font-size: 45px;
@@ -402,15 +411,15 @@ header figure img{
   text-decoration: none;
 }
 
-.about-us h2 a::first-letter{
+.about-us h2 a::first-letter {
   text-transform: uppercase;
 }
 
-.about-us h2 img{
+.about-us h2 img {
   width: 85%;
 }
 
-.about-us p{
+.about-us p {
   width: 44%;
   margin-top: 5%;
   color: #3c3c3c;
@@ -418,16 +427,16 @@ header figure img{
   text-align: center;
 }
 
-.about-us p::first-letter{
+.about-us p::first-letter {
   text-transform: uppercase;
 }
 
 /* Menu section starts */
-.menu .wrapper{
+.menu .wrapper {
   padding: 70px 0 20px 0;
 }
 
-.menu h2{
+.menu h2 {
   color: #767676;
   font-size: 45px;
   font-weight: 600;
@@ -435,58 +444,58 @@ header figure img{
   text-transform: capitalize;
 }
 
-.menu figure{
+.menu figure {
   text-align: center;
 }
 
-.menu figure img{
+.menu figure img {
   width: 25%;
   position: relative;
   bottom: 10px;
 }
 
-.menu-options{
+.menu-options {
   display: flex;
   justify-content: center;
   margin: 50px 0;
 }
 
-.menu-options li{
+.menu-options li {
   margin: 0 10px;
 }
 
-.menu-options li a{
+.menu-options li a {
   color: #767676;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
 }
 
-.menu-options li a:hover{
+.menu-options li a:hover {
   color: black;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.menu-list{
+.menu-list {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.menu-list li{
+.menu-list li {
   margin-bottom: 50px;
 }
 
-.menu-list li h3{
+.menu-list li h3 {
   color: #828282;
   font-size: 19px;
   text-transform: uppercase;
 }
 
-.menu-list li h3::after{
-  content: " ..........................................12$";
+.menu-list li h3::after {
+  content: ' ..........................................12$';
 }
 
-.menu-list li span{
+.menu-list li span {
   color: #828282;
   font-size: 18px;
   font-style: italic;
@@ -494,4 +503,204 @@ header figure img{
 
 /*=================================
   Main styling ends here
+=================================*/
+
+/*=================================
+  Footer section starts here
+=================================*/
+
+footer {
+  background-image: linear-gradient(
+      rgba(216, 204, 204, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/contactus.jpg');
+  background-size: cover;
+}
+
+footer .wrapper {
+  min-height: 800px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 60px 0 40px 0;
+}
+
+.contact-us h2 {
+  margin-right: 15%;
+  color: #767676;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.contact-us figure {
+  text-align: right;
+}
+
+.contact-us figure img {
+  width: 52%;
+  position: relative;
+  right: 7%;
+  bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-details {
+  flex-basis: 40%;
+}
+
+.address-details h3 {
+  color: #767676;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.address-details p {
+  color: #828282;
+  text-transform: capitalize;
+}
+
+.contact-us form {
+  width: 47%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: 'title title' 'first last' 'message message' 'submit submit';
+}
+
+.contact-us h3{
+  grid-area: title;
+  color: #767676;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+.form-element input, .form-element textarea{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  font-size: 20px;
+}
+
+.form-container .form-element:nth-child(4){
+  grid-area: message;
+}
+
+.form-container .form-element:nth-child(4) textarea{
+  width: 100%;
+  resize: none;
+  height: 200px;
+}
+
+.form-container .form-element:nth-child(5){
+  grid-area: submit;
+  text-align: center;
+}
+
+.form-container .form-element:nth-child(5) input{
+  padding: 10px 23px;
+  border: 1px solid black;
+  color: #3c3c3c;
+  text-transform: capitalize;
+}
+
+.form-container .form-element:nth-child(5) input:hover{
+  
+  font-weight: 600;
+  padding: 10px 28px;
+  transition: 1s;
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-love{
+  text-indent: -200em;
+  color: red;
+}
+
+.social h3{
+  text-transform: capitalize;
+  color: #767676;
+  font-size: 20px;
+}
+
+.social h3 a{
+  color: green;
+  text-decoration: none;
+}
+
+.icon-love::before {
+  content: "\f004";
+  float:  right;
+  font-weight: 500;
+  font-family: "Font Awesome 5 Free";
+  text-indent: 0;
+}
+
+.social{
+  border-top: 1px solid #fff;
+  padding: 30px 0;
+}
+
+.social ul{
+  display: flex;
+  align-items: center;
+}
+
+.social ul li a{
+  color: #767676;
+  font-size: 20px;
+  padding: 7px 12px;
+  border: 1px solid #767676;
+  margin-left: 20px;
+}
+
+.icon-facebook{
+  text-indent: -200em;
+}
+
+.icon-facebook::before {
+  content: "\f39e";
+  float:  right;
+  font-weight: 500;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.icon-facebook:hover::before,.icon-linkedin:hover::before{
+  color: blue;
+  transition: .5s;
+}
+
+.icon-linkedin{
+  text-indent: -200em;
+}
+
+.icon-linkedin::before{
+  content: "\f0e1";
+  float:  right;
+  font-weight: 500;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+/*=================================
+  Footer section ends here
 =================================*/
