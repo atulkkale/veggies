@@ -288,6 +288,12 @@ header figure img {
   cursor: pointer;
 }
 
+.down:hover{
+  background-color: #f6be3b;
+  transition: .5s;
+  border: 1px solid #f6be3b;
+}
+
 .down span {
   text-indent: -200em;
 }
@@ -324,7 +330,7 @@ header figure img {
 }
 
 .soup .wrapper {
-  padding: 20vh 0;
+  padding: 80px 0;
 }
 
 .soup ul {
@@ -378,6 +384,11 @@ header figure img {
   margin: 50px 0 150px 0;
 }
 
+.special-images a{
+  width: 100%;
+  height: 100%;
+}
+
 .special-images a img {
   width: 100%;
   height: 100%;
@@ -394,7 +405,7 @@ header figure img {
 }
 
 .about-us .wrapper {
-  height: 110vh;
+  height: 800px;
   text-align: center;
 }
 
@@ -530,31 +541,31 @@ footer .wrapper {
 }
 
 .contact-us h2 {
-  margin-right: 15%;
+  width: 47%;
   color: #767676;
   font-size: 45px;
   font-weight: 600;
+  text-align: center;
   text-transform: capitalize;
 }
 
 .contact-us figure {
-  text-align: right;
+  width: 47%;
+  text-align: center;
 }
 
 .contact-us figure img {
   width: 52%;
-  position: relative;
-  right: 7%;
-  bottom: 20px;
 }
 
 .details {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 47%;
 }
 
 .address-details {
-  flex-basis: 40%;
+  width: 70%;
 }
 
 .address-details h3 {
@@ -644,6 +655,11 @@ footer .wrapper {
 .social h3 a{
   color: green;
   text-decoration: none;
+}
+
+.social h3 a:hover{
+  transition: .5s;
+  color: blue;
 }
 
 .icon-love::before {
