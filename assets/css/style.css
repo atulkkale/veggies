@@ -252,14 +252,20 @@ header ul a:hover {
   color: black;
 }
 
+.display-content{
+  width: 45%;
+  float: right;
+  text-align: center;
+  margin-top: 150px;
+}
+
 header h1 {
   color: #3c3c3c;
   font-size: 36px;
-  text-align: center;
-  width: 35%;
-  position: absolute;
-  top: 40%;
-  right: 0;
+  /* text-align: center; */
+  /* width: 35%; */
+  /* float: right; */
+  /* margin-top: 150px; */
 }
 
 header h1::first-letter {
@@ -267,8 +273,8 @@ header h1::first-letter {
 }
 
 header figure img {
-  width: 35%;
-  position: absolute;
+  width: 80%;
+  /* position: absolute; */
   top: 56%;
   right: 0;
 }
@@ -720,3 +726,158 @@ footer .wrapper {
 /*=================================
   Footer section ends here
 =================================*/
+
+/*Media query starts*/
+@media only screen and (max-width: 1250px) {
+  .contact-us{
+    align-items: flex-start;
+  }
+}
+
+/* Media query for 990px starts here. */
+@media only screen and (max-width: 990px){
+  /* Hamburger styling */
+  header .wrapper nav ul{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+    padding: 20px 10px;
+    cursor: pointer;
+  }
+
+  .hamburger div{
+    text-indent: -200em;
+    font-size: 9px;
+  }
+
+  .hamburger div::after{
+    content: "";
+    border-bottom: 5px solid black;
+    width: 30px;
+    float: right;
+    text-indent: 0;
+  }
+
+  /* Removing all hover effects */
+  header ul a:hover{
+    border: none;
+    color: #767676;
+  }
+
+  .down:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+
+  .menu-options li a:hover{
+      color: rgb(118, 118, 118);
+  }
+
+  .display-content{
+    width: 60%;
+  }
+
+  .form-container .form-element:nth-child(5) input:hover{
+    font-weight: 400;
+    padding: 10px 23px;
+  }
+
+  .social h3 a:hover{
+    color: green;
+  }
+
+  .icon-facebook:hover::before, .icon-linkedin:hover::before{
+    color: #767676;
+  }
+
+  .soup ul{
+    flex-direction: column;
+  }
+
+  .soup ul li{
+    margin-top: 20px;
+  }
+  
+  .special-images{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu figure img{
+    bottom: 0;
+  }
+
+  .details{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us form{
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+
+  .contact-us form{
+  grid-template-areas:
+  'title title'
+  'first first'
+  'last last'
+  'message message'
+  'submit submit';
+  }
+
+  .form-container .form-element:nth-child(4) textarea{
+    width: auto;
+  }
+
+  .form-container .form-element:nth-child(2){
+    grid-area: first;
+  }
+
+  .form-container .form-element:nth-child(3){
+    grid-area: last;
+  }
+
+  .form-container .form-element:nth-child(5){
+    text-align: start;
+  }
+
+}
+
+/* Media query for 660px starts here. */
+@media only screen and (max-width: 660px){
+  .display-content{
+    float: none;
+    width: auto;
+  }
+
+  .special-images{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us h2{
+    width: auto;
+    text-align: center;
+  }
+
+  .about-us p{
+    width: auto;
+  }
+
+  .menu-options{
+    overflow: scroll;
+    padding-left: 50px;
+  }
+  
+  .menu-list{
+    grid-template-columns: 1fr;
+  }
+  
+  .social{
+    flex-direction: column;
+  }
+
+  .social ul{
+    margin-top: 20px;
+  }
+}
