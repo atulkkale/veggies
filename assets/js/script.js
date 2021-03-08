@@ -23,9 +23,9 @@ close.addEventListener('click', menuhide);
 var images = document.querySelectorAll('.special-images li');
 
 function toggleModal(e) {
-  var clickedElement = e.target.tagName;
+  var clickedElement = e.target.tagName; // Here we store tag name of clicked element.
   console.log(clickedElement);
-  switch (clickedElement) {
+  switch (clickedElement) { // Depending upon element we perform actions on modal.
     case 'IMG':
       e.preventDefault();
       var li = e.target.parentNode.parentNode;
