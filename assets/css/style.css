@@ -723,6 +723,42 @@ footer .wrapper {
   Footer section ends here
 =================================*/
 
+  /* Modal style for js */
+  .makemodal{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3c3c3cfa;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+  }
+
+  .makemodal a{
+    width: 100%;
+    height: auto;
+  }
+
+  .makemodal a img{
+    width: 35vw;
+    height: auto;
+    transition: .5s;
+  }
+
+  .makemodal a::after{
+    content: "Please click on blank space to exit.";
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    z-index: 8;
+    top: 10px;
+    right: 10px;
+  }
+
 /*Media query starts*/
 @media only screen and (max-width: 1250px) {
   .contact-us {
@@ -907,5 +943,10 @@ footer .wrapper {
 
   .social ul {
     margin-top: 20px;
+  }
+
+  /* Modal style for js */
+  .makemodal a img{
+    width: 35vh;
   }
 }
