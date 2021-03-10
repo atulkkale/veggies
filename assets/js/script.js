@@ -115,6 +115,7 @@ var form = {
         this
       );
     } else {
+      e.preventDefault(); // For form to submit this have to be removed.
       this.parentNode.classList.remove('onsubmitval');
     }
   },
