@@ -807,6 +807,14 @@ footer .wrapper {
   left: 0;
 }
 
+.gmaillenerror::after{
+  content: attr(data-field-name) " must be 5 to 20 characters long!";
+  color: red;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+
 .validfield::after{
   content: "Valid.";
   color: green;
